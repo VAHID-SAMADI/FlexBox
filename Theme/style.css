@@ -62,7 +62,8 @@ header {
   box-shadow: #000 0 0 10px;
 }
 .cards img {
-  width: 100%;
+  width: 150px;
+  height: 150px;
 }
 .cards a {
   background-color: #e74c3c;
