@@ -1,147 +1,166 @@
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
 }
-body{
-    background-color: aliceblue;
+body {
+  background-color: aliceblue;
 }
-header{
-    text-align: center;
-    border: 2px solid grey;
-    border-radius: 20px;
-    margin: 5px;
-    background-color: skyblue;
-    position: sticky;
-    top: 0px;
-    left: 300px;
+header {
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 20px;
+  margin: 5px;
+  background-color: skyblue;
+  position: sticky;
+  top: 0px;
+  left: 300px;
 }
-.navBar{
-    margin: 1rem 0;
+.navBar {
+  margin: 1rem 0;
 }
-.imglogo{
-    width: 80%;
+.imglogo {
+  width: 30%;
 }
-.NavLink{
-    margin: 0 2rem;
+.NavLink {
+  margin: 0 1.5rem;
 
-    color: #000000;
+  color: #000000;
 }
-.NavLink:hover{
-    color: #e74c3c;
+.NavLink:hover {
+  color: #e74c3c;
 }
-.description{
-    margin: 2rem;
-    border: 2px solid #000000;
-    border-radius: 2rem;
-    padding: 2rem ;
+.description {
+  margin: 2rem;
+  border: 2px solid #000000;
+  border-radius: 2rem;
+  padding: 2rem;
 }
 .description > h1::first-letter {
-    font-size: 3em;
-    
+  font-size: 3em;
 }
-.card-holder{
-    width: 80%;
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-around;
+.card-holder {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
 }
-.cards{
-    background-color: #f0f0f0;
-    border-radius: 15px;
-    border: #000 dashed 1px;
-    width: 50vh;
-    height: 40vh;
-    display: flex;
+.cards {
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  border: #000 dashed 1px;
+  width: 30%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.5s;
+}
+.cards:hover {
+  box-shadow: #000 0 0 10px;
+}
+.cards img {
+  width: 100%;
+}
+.cards a {
+  background-color: #e74c3c;
+  color: #000;
+  transition: 0.3s;
+  padding: 5px;
+  border-radius: 15px;
+}
+.cards a:hover {
+  box-shadow: #000 0 0 5px;
+  text-decoration: underline;
+  font-size: 1.3em;
+}
+footer {
+  margin: 5rem 2rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 20px 0;
+}
+.footer-holder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-holder h2 {
+  font-size: 1.2em;
+}
+.footer-holder h3 {
+  margin-top: 20%;
+  font-size: 0.7em;
+}
+.CWRtext {
+  font-size: 2rem;
+}
+.CWRtext::after {
+  content: "";
+  width: 0px;
+  height: 2rem;
+  border: 1px solid rgba(255, 0, 0, 0.534);
+  display: inline-block;
+}
+.CWRtext::before {
+  content: "";
+  width: 0px;
+  height: 2rem;
+  border: 1px solid rgba(255, 0, 0, 0.534);
+  display: inline-block;
+}
+
+.flex-trust {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.5s;
+}
+.Trusts,
+.Address {
+  width: 100%;
+  height: 30vh;
+  background-color: #f0f0f0;
+  border: 2px dashed #f0f;
+  border-radius: 10px;
+  margin: 5px 2px;
+  overflow: hidden;
+  font-size: 1.5rem;
+}
+.trust-pics {
+  width: 100px;
+  height: 100px;
+  margin: 5px 1.5rem;
+  transition: 0.5s;
+}
+.trust-pics:hover {
+  width: 110px;
+  height: 110px;
+  margin: 5px 1rem;
+  box-shadow: #000 0 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-trust {
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    transition: 0.5s;
-}
-.cards:hover{
-    box-shadow: #000 0 0 10px ;
+    justify-items: flex-end;
+  }
+  * {
+    font-size: 1.2rem;
+  }
+  .CWRtext {
+    font-size: 1rem;
+  }
+  .Trusts,
+.Address {
+  width: 100%;
+  height: 45vh;
 
 }
-.cards  img{
-    width: 100%;
-}
-.cards a{
-    background-color: #e74c3c;
-    color: #000;
-    transition: 0.3s;
-    padding: 5px;
-    border-radius: 15px;
-    
-}
-.cards a:hover{
-    box-shadow: #000 0 0 5px ;
-    text-decoration: underline;
-    font-size: 1.3em;
-}
-footer{
-    margin: 5rem 2rem;
-    text-align: center;
-
-}
-.footer-holder{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: space-around;
-    justify-content: space-around;
-    align-items: center;
-}
-.CWRtext{
-    font-size: 2rem;
-}
-.CWRtext::after{
-    content: "";
-    width: 0px;
-    height: 2rem;
-    border: 1px solid rgba(255, 0, 0, 0.534);
-    display: inline-block;
-}
-.CWRtext::before{
-    content: "";
-    width: 0px;
-    height: 2rem;
-    border: 1px solid rgba(255, 0, 0, 0.534);
-    display: inline-block;
-}
-.Trusts , .Address{
-
-    width: 100%;
-    height: 30vh;
-    background-color: #f0f0f0;
-    border: 2px dashed #f0f;
-    border-radius: 10px;
-    margin: 0 2px;
-    overflow: hidden;
-}
-.footer-holder h2{
-    font-size: 1.2em;
-}
-.footer-holder  h3{
-    margin-top: 20%;
-    font-size: 0.7em;
-    
-}
-.flex-trust{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    transition: 0.5s;
-}
-.trust-pics{
-    width: 100px;
-    height: 100px;
-    margin: 5px 1.5rem;
-    transition: 0.5s;
-}
-.trust-pics:hover{
-    width: 110px;
-    height: 110px;
-    margin: 5px 1rem;
-    box-shadow: #000 0 0 5px;
 }
